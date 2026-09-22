@@ -69,7 +69,7 @@ function App() {
         </section>
 
         {/* SECTION: Technical Expertise */}
-        <section id="expertise" className="fullscreen-section">
+        <section id="expertise" className="fullscreen-section glow-left">
           <h3 className="section-title">Technical Expertise</h3>
           <div className="row g-4">
             <div className="col-md-6">
@@ -108,7 +108,7 @@ function App() {
         </section>
 
         {/* SECTION: Projects */}
-        <section id="projects" className="fullscreen-section">
+        <section id="projects" className="fullscreen-section glow-right">
           <h3 className="section-title">Project Showcase</h3>
           <div className="row g-4">
             {projectsData.map((project, index) => (
@@ -134,7 +134,7 @@ function App() {
         </section>
 
         {/* SECTION: Full Resume Info Broken into IDs */}
-        <section className="fullscreen-section">
+        <section className="fullscreen-section glow-left">
           
           {/* ADDED ID: #experience */}
           <div id="experience" className="mb-5">
@@ -206,7 +206,7 @@ function App() {
             </ul>
           </div>
             {/* NEW SECTION: Contact */}
-          <section id="contact" className="fullscreen-section pt-0">
+          <section id="contact" className="fullscreen-section pt-0 glow-right">
             <h3 className="section-title text-center mb-5">Get In Touch</h3>
             <div className="row g-4 justify-content-center">
               <div className="col-md-5">

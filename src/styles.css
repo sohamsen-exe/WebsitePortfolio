@@ -36,6 +36,8 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
+
+  overflow-x: hidden;
 }
 
 html {
@@ -255,4 +257,30 @@ html {
 .cert-link:hover .cert-logo {
   width: 20px; /* Expands to reveal the logo */
   opacity: 1;
+}
+
+/* Alternating Side Glows */
+.glow-left, .glow-right {
+  position: relative;
+}
+
+.glow-left::before, 
+.glow-right::before {
+  content: '';
+  position: absolute;
+  top: -10%; 
+  bottom: -10%; /* Stretches the glow slightly vertically */
+  width: 100vw; /* Forces the glow to span the full viewport width */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the pseudo-element perfectly */
+  z-index: -1; /* Keeps the glow behind your cards and text */
+  pointer-events: none; /* Prevents the glow from blocking clicks */
+}
+
+.glow-left::before {
+  background-image: radial-gradient(ellipse at left center, var(--top-glow) 0%, transparent 55%);
+}
+
+.glow-right::before {
+  background-image: radial-gradient(ellipse at right center, var(--top-glow) 0%, transparent 55%);
 }

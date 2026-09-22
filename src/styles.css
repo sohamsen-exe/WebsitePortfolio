@@ -8,22 +8,33 @@
   --border-color: #e2e8f0;
   --accent-color: #3b82f6;
   --badge-bg: #f1f5f9;
+  /* Adds a soft blue gradient for light mode */
+  --top-glow: rgba(59, 130, 246, 0.15); 
 }
 
 [data-theme="dark"] {
-  --bg-color: #050505;       /* Premium true black background */
-  --text-primary: #f9fafb;   /* Crisp off-white for high contrast readability */
-  --text-secondary: #9ca3af; /* Soft gray for secondary text */
-  --card-bg: #121212;        /* Slightly elevated black for project/expertise cards */
-  --border-color: #262626;   /* Subtle dark gray to separate elements cleanly */
-  --accent-color: #3b82f6;   /* Keeps the professional tech blue accent */
-  --badge-bg: #171717;       /* Dark, stealthy gray for tech badges */
+  --bg-color: #050505;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --card-bg: #121212;
+  --border-color: #262626;
+  --accent-color: #3b82f6;
+  --badge-bg: #171717;
+  /* Adds a deeper, subtle blue gradient for dark mode */
+  --top-glow: rgba(59, 130, 246, 0.12); 
 }
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-color);
+  
+  /* Creates the top-centered glowing aura */
+  background-image: radial-gradient(ellipse at top, var(--top-glow) 0%, transparent 60%);
+  background-repeat: no-repeat;
+  /* Ensures the glow only sits at the very top of the page */
+  background-size: 100% 100vh; 
+  
   color: var(--text-primary);
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;

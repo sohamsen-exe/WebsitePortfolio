@@ -9,7 +9,7 @@
   --accent-color: #3b82f6;
   --badge-bg: #f1f5f9;
   /* Adds a soft blue gradient for light mode */
-  --top-glow: rgba(#3B82F6); 
+  --top-glow: rgba(0, 98, 255, 0.15); 
 }
 
 [data-theme="dark"] {
@@ -21,7 +21,7 @@
   --accent-color: #3b82f6;
   --badge-bg: #171717;
   /* Adds a deeper, subtle blue gradient for dark mode */
-  --top-glow: rgba(#3B82F6); 
+  --top-glow: rgba(0, 98, 255, 0.15); 
 }
 
 body {

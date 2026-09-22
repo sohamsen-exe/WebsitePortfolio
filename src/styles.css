@@ -8,8 +8,8 @@
   --border-color: #e2e8f0;
   --accent-color: #3b82f6;
   --badge-bg: #f1f5f9;
-  /* Adds a soft blue gradient for light mode */
-  --top-glow: rgba(0, 98, 255, 0.15); 
+  /* Increased from 0.15 to 0.4 for a highly visible bright blue */
+  --top-glow: rgba(59, 130, 246, 0.4); 
 }
 
 [data-theme="dark"] {
@@ -20,21 +20,18 @@
   --border-color: #262626;
   --accent-color: #3b82f6;
   --badge-bg: #171717;
-  /* Adds a deeper, subtle blue gradient for dark mode */
-  --top-glow: rgba(0, 98, 255, 0.15); 
+  /* Increased from 0.12 to 0.3 for a strong, deep space blue glow */
+  --top-glow: rgba(59, 130, 246, 0.3); 
 }
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-color);
-  
-  /* Creates the top-centered glowing aura */
-  background-image: radial-gradient(ellipse at top, var(--top-glow) 0%, transparent 60%);
+  /* Expanded to 75% for a wider, smoother fade */
+  background-image: radial-gradient(ellipse at top, var(--top-glow) 0%, transparent 75%);
   background-repeat: no-repeat;
-  /* Ensures the glow only sits at the very top of the page */
   background-size: 100% 100vh; 
-  
   color: var(--text-primary);
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
@@ -50,10 +47,11 @@ html {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--bg-color);
-  opacity: 0.95;
-  border-bottom: 1px solid var(--border-color);
-  padding: 1rem 0;
+  background-color: transparent; /* Replaces the solid background */
+  border-bottom: none; /* Removes the hard line cutting off the glow */
+  backdrop-filter: blur(12px); /* Blurs content as you scroll beneath it */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  padding: 1.5rem 0; 
   transition: background-color 0.3s;
 }
 

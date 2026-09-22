@@ -88,9 +88,7 @@ html {
   max-width: 260px;
   height: 340px;
   object-fit: cover;
-  border-radius: 12px; /* Slight rounding to keep it modern */
-  border: 4px solid var(--card-bg);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Slight rounding to keep it modern */
   margin-bottom: 1.5rem;
   border: none; 
   padding: 0; 

@@ -43,6 +43,7 @@ function App() {
             <a href="#experience" className="nav-link">Experience</a>
             <a href="#academics" className="nav-link">Academics</a>
             <a href="#certifications" className="nav-link">Certifications</a>
+            <a href="#contact" className="nav-link">Contact</a> {/* ADDED CONTACT LINK */}
             <button onClick={() => setIsDarkMode(!isDarkMode)} className="nav-link fw-bold">
               {isDarkMode ? '☀ Light' : '☾ Dark'}
             </button>
@@ -60,7 +61,6 @@ function App() {
           <p className="text-muted-custom mb-4 px-md-5">{profileData.summary}</p>
           
           <div className="d-flex flex-wrap justify-content-center gap-3">
-            <a href={`mailto:${profileData.email}`} className="social-link">Email</a>
             <a href={profileData.github} className="social-link" target="_blank" rel="noreferrer">GitHub</a>
             <a href={profileData.linkedin} className="social-link" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href={profileData.leetcode} className="social-link" target="_blank" rel="noreferrer">LeetCode</a>
@@ -205,7 +205,31 @@ function App() {
               ))}
             </ul>
           </div>
-          
+            {/* NEW SECTION: Contact */}
+          <section id="contact" className="fullscreen-section pt-0">
+            <h3 className="section-title text-center mb-5">Get In Touch</h3>
+            <div className="row g-4 justify-content-center">
+              <div className="col-md-5">
+                <div className="custom-card text-center py-5 d-flex flex-column align-items-center">
+                  <h4 className="h5 fw-bold mb-3">Email</h4>
+                  <p className="text-muted-custom small mb-3">Drop me a message and I'll get back to you.</p>
+                  <a href={`mailto:${profileData.email}`} className="project-link fs-6 mt-auto">
+                    {profileData.email} ↗
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-5">
+                <div className="custom-card text-center py-5 d-flex flex-column align-items-center">
+                  <h4 className="h5 fw-bold mb-3">Phone</h4>
+                  <p className="text-muted-custom small mb-3">Available for calls regarding opportunities.</p>
+                  {/* The replace function removes spaces from the phone number for the dialer link */}
+                  <a href={`tel:${profileData.phone.replace(/\s+/g, '')}`} className="project-link fs-6 mt-auto">
+                    {profileData.phone} ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
 
       </div>

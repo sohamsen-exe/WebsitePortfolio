@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 :root {
   --bg-color: #f8fafc;
   --text-primary: #0f172a;
@@ -26,12 +25,13 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif; /* Updated to the new serif font */
+  
   background-color: var(--bg-color);
-  /* Expanded to 75% for a wider, smoother fade */
   background-image: radial-gradient(ellipse at top, var(--top-glow) 0%, transparent 75%);
   background-repeat: no-repeat;
   background-size: 100% 100vh; 
+  
   color: var(--text-primary);
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;

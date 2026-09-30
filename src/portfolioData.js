@@ -84,7 +84,7 @@ export const projectsData = [
     title: "Java Snake Game", 
     tech: ["Java", "Swing", "AWT"], 
     description: "Developed a desktop-based Snake Game with real-time gameplay, collision detection, and score tracking. Implemented user authentication and high-score leaderboards using Java I/O and Collections.", 
-    link: "https://github.com/sohamsen-exe/snake-game" 
+    link: "https://github.com/sohamsen-exe/SnakeGame" 
   },
   {
     title: "8-Ball Pool 3D",

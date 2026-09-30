@@ -75,28 +75,28 @@ export const skillsData = {
 
 export const projectsData = [
   {
-    title: "Archon - University Management System", //[cite: 1, 2]
-    tech: ["Node.js", "Express.js", "MongoDB", "HTML", "CSS", "JS"], //[cite: 2]
-    description: "Built a full-stack university management system using a three-tier architecture. Designed scalable MongoDB schemas and implemented secure authentication, role-based access control, session management, and separate dashboards for Students, Faculty, and Administrators.", //[cite: 2]
-    link: "https://github.com/sohamsen-exe/archon" // Paste your actual project link here
+    title: "Archon - University Management System", 
+    tech: ["Node.js", "Express.js", "MongoDB", "HTML", "CSS", "JS"], 
+    description: "Built a full-stack university management system using a three-tier architecture. Designed scalable MongoDB schemas and implemented secure authentication, role-based access control, session management, and separate dashboards for Students, Faculty, and Administrators.", 
+    link: "https://github.com/sohamsen-exe/archon"
   },
   {
-    title: "Java Snake Game", //[cite: 1, 2]
-    tech: ["Java", "Swing", "AWT"], //[cite: 2]
-    description: "Developed a desktop-based Snake Game with real-time gameplay, collision detection, and score tracking. Implemented user authentication and high-score leaderboards using Java I/O and Collections.", //[cite: 2]
-    link: "https://github.com/sohamsen-exe/SnakeGame" // Paste your actual project link here
+    title: "Java Snake Game", 
+    tech: ["Java", "Swing", "AWT"], 
+    description: "Developed a desktop-based Snake Game with real-time gameplay, collision detection, and score tracking. Implemented user authentication and high-score leaderboards using Java I/O and Collections.", 
+    link: "https://github.com/sohamsen-exe/snake-game" 
   },
   {
-    title: "Heart Failure Detection Model", //[cite: 1]
-    tech: ["NumPy", "Pandas", "Seaborn", "Matplotlib", "Scikit-Learn"], //[cite: 1]
-    description: "Machine Learning healthcare application built to analyze clinical data and detect heart failure indicators.", //[cite: 1]
-    link: "https://github.com/sohamsen-exe/HeartDetection_IDS_Project_Repo" // Paste your actual project link here
+    title: "8-Ball Pool 3D",
+    tech: ["Python", "Pygame", "Pymunk"],
+    description: "Built a fully functional pseudo-3D pool game featuring regulation table geometry, interactive UI menus, and comprehensive state management for standard gameplay rules. Designed a robust physics integration using Pymunk to handle 2D rigid-body dynamics, precise collision detection, and realistic ball trajectory modeling. Delivered a highly optimized, fullscreen-capable application by implementing custom rendering pipelines and static asset caching to ensure a seamless 60 FPS experience.",
+    link: "https://github.com/sohamsen-exe/8ballpool3D"
   },
   {
-    title: "IRIS Data Analysis", //[cite: 1]
-    tech: ["NumPy", "Pandas", "Seaborn", "Matplotlib"], //[cite: 1]
-    description: "Statistical and visual data science application utilizing exploratory data analysis techniques.", //[cite: 1]
-    link: "https://github.com/sohamsen-exe/Iris_SDS_Project_Repo" // Paste your actual project link here
+    title: "Enterprise Transaction System",
+    tech: ["Java", "Spring Boot", "Kafka", "H2 Database", "REST APIs"],
+    description: "Engineered a financial transaction processing backend to consume and deserialize high-volume messages. Integrated Apache Kafka into a Spring Boot microservice, implementing transaction validation and persistence logic with Spring Data JPA and an H2 SQL database. Connected to external REST Incentive APIs and verified system behavior using Maven test suites.",
+    link: "https://github.com/sohamsen-exe/forage-midas"
   }
 ];
 

@@ -75,7 +75,7 @@ export const skillsData = {
 
 export const projectsData = [
   {
-    title: "Archon - University Management System", 
+    title: "Archon", 
     tech: ["Node.js", "Express.js", "MongoDB", "HTML", "CSS", "JS"], 
     description: "Built a full-stack university management system using a three-tier architecture. Designed scalable MongoDB schemas and implemented secure authentication, role-based access control, session management, and separate dashboards for Students, Faculty, and Administrators.", 
     link: "https://github.com/sohamsen-exe/archon"
@@ -89,11 +89,11 @@ export const projectsData = [
   {
     title: "8-Ball Pool 3D",
     tech: ["Python", "Pygame", "Pymunk"],
-    description: "Built a fully functional pseudo-3D pool game featuring regulation table geometry, interactive UI menus, and comprehensive state management for standard gameplay rules. Designed a robust physics integration using Pymunk to handle 2D rigid-body dynamics, precise collision detection, and realistic ball trajectory modeling. Delivered a highly optimized, fullscreen-capable application by implementing custom rendering pipelines and static asset caching to ensure a seamless 60 FPS experience.",
+    description: "Built a fully functional pseudo-3D pool game featuring regulation table geometry, interactive UI menus, and comprehensive state management for standard gameplay rules.",
     link: "https://github.com/sohamsen-exe/8ballpool3D"
   },
   {
-    title: "Enterprise Transaction System",
+    title: "Forage Midas",
     tech: ["Java", "Spring Boot", "Kafka", "H2 Database", "REST APIs"],
     description: "Engineered a financial transaction processing backend to consume and deserialize high-volume messages. Integrated Apache Kafka into a Spring Boot microservice, implementing transaction validation and persistence logic with Spring Data JPA and an H2 SQL database. Connected to external REST Incentive APIs and verified system behavior using Maven test suites.",
     link: "https://github.com/sohamsen-exe/forage-midas"
